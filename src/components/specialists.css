@@ -1,0 +1,50 @@
+.specialists>h1{
+    color: #9C87EF;
+    font-weight: 450;
+}
+.specialists{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center ;
+    width: 90%;
+    margin: 0 auto;
+    gap: 50px;
+}
+.spec-part1{
+    display: flex;
+    justify-content: space-around;
+}
+.spec-part2{
+    display: flex;
+    justify-content: space-around;
+}
+.specialist{
+    width: 22%;
+    height: 255px;
+    background: #9C87EF;
+    padding: 20px;
+    border-radius: 23px;
+}
+.specialist-header{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+}
+.specialist-content{
+    color: #fff;
+}
+
+@media screen and (max-width: 1200px) {
+    .specialist{
+        padding: 0 5%;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .specialist{
+        font-size: 12px;
+    }
+
+}
