@@ -4,7 +4,7 @@ import './footer.css'
 
 export default function Footer() {
     return (
-        <Footer className="footer">
+        <div className="footer">
             <h1>Footer</h1>
             {/* <div>
                 <div>
@@ -42,6 +42,6 @@ export default function Footer() {
                     <img src="" alt="" />
                 </div>
             </div> */}
-        </Footer>
+        </div>
     )
 }

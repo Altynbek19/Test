@@ -2,7 +2,6 @@ import { useState } from 'react'
 import './App.css'
 import HeaderView from './components/Header'
 import WelcomeView from './components/Welcome'
-import Specialists from './components/Specialists'
 import Footer from './components/Footer'
 
 function App() {
@@ -10,7 +9,7 @@ function App() {
     <>
       <HeaderView />
       <WelcomeView />
-      <Specialists />
+      <Footer/>
     </>
   )
 }

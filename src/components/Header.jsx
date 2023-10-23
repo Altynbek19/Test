@@ -13,16 +13,19 @@ export default function Header() {
                         колледж
                     </div>
                     <div className="header-button">
-                        колледж
+                    ПРОФЕССИИ
                     </div>
                     <div className="header-button">
-                        колледж
+                    СТУДЕНЧЕСКИЕ КЛУБЫ
                     </div>
                     <div className="header-button">
-                        колледж
+                    СТУДЕНТ
                     </div>
                     <div className="header-button">
-                        колледж
+                    ПОСТУПАЮЩИМ
+                    </div>
+                    <div className="header-button">
+                    КОНТАКТЫ
                     </div>
                 </div>
             </div>
