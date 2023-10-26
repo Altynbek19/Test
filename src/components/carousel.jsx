@@ -11,23 +11,26 @@ import "./carousel.css"
 
 function PhotoCarousel() {
     return (
-      <Carousel className="carousel-container">
-        <div className="carousel-slide">
-          <img src={inf} alt="Image 1" />
-        </div>
-        <div className="carousel-slide">
-          <img src={inf2} alt="Image 2" />
-        </div>
-        <div className="carousel-slide">
-          <img src={inf3} alt="Image 2" />
-        </div>
-        <div className="carousel-slide">
-          <img src={inf4} alt="Image 2" />
-        </div>
-        <div className="carousel-slide">
-          <img src={inf5} alt="Image 2" />
-        </div>
-      </Carousel>
+        <div className="carousel">
+                    <h1 className="carousel-title">ГАЛЕРЕЯ</h1>
+                    <Carousel className="carousel-container">
+                <div className="carousel-slide">
+                  <img src={inf} alt="Image 1" />
+                </div>
+                <div className="carousel-slide">
+                  <img src={inf2} alt="Image 2" />
+                </div>
+                <div className="carousel-slide">
+                  <img src={inf3} alt="Image 2" />
+                </div>
+                <div className="carousel-slide">
+                  <img src={inf4} alt="Image 2" />
+                </div>
+                <div className="carousel-slide">
+                  <img src={inf5} alt="Image 2" />
+                </div>
+              </Carousel>
+                </div>
     );
   }
   

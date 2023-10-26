@@ -1,16 +1,21 @@
-import { useState } from 'react'
+import { useState, createContext, useEffect } from 'react'
 import './App.css'
-import HeaderView from './components/Header'
+import HeaderView from './components/header/Header'
 import WelcomeView from './components/Welcome'
-import Footer from './components/Footer'
+import Footer from './components/Footer/Footer'
+import router from './app/index'
+import {RouterProvider} from 'react-router-dom'
+export const ContextBox = createContext()
 
 function App() {
   return (
-    <>
-      <HeaderView />
-      <WelcomeView />
-      <Footer/>
-    </>
+    <div className="App">
+    <ContextBox.Provider>
+      <RouterProvider
+        router={router}
+      />  
+    </ContextBox.Provider>
+    </div>
   )
 }
 

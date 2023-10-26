@@ -6,6 +6,7 @@ import welcomeImg1 from '../assets/welcome-right1.png'
 import welcomeImg2 from '../assets/welcome-right2.png'
 import Specialists from '../components/Specialists'
 import PhotoCarousel from '../components/carousel';
+import Footer from './Footer/Footer'
 
 
 import { Carousel } from 'react-responsive-carousel';
@@ -19,40 +20,27 @@ import "./carousel.css"
 
 export default function Welcome() {
     return (
-        <div className="full_welcome">
-            <div className="welcome">
-                <div className="welcome-left">
-                    <img src={welcomeLeft} alt="" />
-                    <div className="welcome-left-button">
-                        Узнать подробнее
+            <div className="full_welcome">
+                <div className="welcome">
+                    <div className="welcome-left">
+                        <img src={welcomeLeft} alt="" />
+                        <div className="left-button">
+                            <div className="welcome-left-button">
+                                Узнать подробнее
+                            </div>
+                        </div>
+                    </div>
+                    <div className="welcome-right">
+                        <div className="welcome-content">IT & Business College - это <br/> место, где вы можете <br/>начать свой путь к успеху!</div>
+                        <div className="welcome-images">
+                            <img src={welcomeImg1} alt="" className="welcome-img" />
+                            <img src={welcomeImg2} alt="" className="welcome-img" />
+                        </div>
                     </div>
                 </div>
-                <div className="welcome-right">
-                    <div className="welcome-content">IT & Business College - это <br/> место, где вы можете <br/>начать свой путь к успеху!</div>
-                    <div className="welcome-images">
-                        <img src={welcomeImg1} alt="" className="welcome-img" />
-                        <img src={welcomeImg2} alt="" className="welcome-img" />
-                    </div>
-                </div>
+                <Specialists />
+                <PhotoCarousel/>
+                <Footer/>
             </div>
-            <Specialists />
-            <Carousel className="carousel-container">
-        <div className="carousel-slide">
-          <img src={inf} alt="Image 1" />
-        </div>
-        <div className="carousel-slide">
-          <img src={inf2} alt="Image 2" />
-        </div>
-        <div className="carousel-slide">
-          <img src={inf3} alt="Image 2" />
-        </div>
-        <div className="carousel-slide">
-          <img src={inf4} alt="Image 2" />
-        </div>
-        <div className="carousel-slide">
-          <img src={inf5} alt="Image 2" />
-        </div>
-      </Carousel>
-        </div>
     )
 }
