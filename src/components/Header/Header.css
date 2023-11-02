@@ -45,3 +45,31 @@
         padding: 0 5%;
     }
 }
+
+@media screen and (max-width: 900px) {
+    .header-button{
+        height: 30px;
+        font-size: 7px;
+    }
+    .header-logo{
+        width: 185px;
+        height: 54px;
+        object-fit: cover;
+    }
+
+}
+@media screen and (max-width: 700px) {
+    .header-button{
+        height: 20px;
+        font-size: 5px;
+    }
+    .header-logo{
+        width: 155px;
+        height: 34px;
+        object-fit: cover;
+    }
+    .header{
+        margin: 0;
+    }
+
+}

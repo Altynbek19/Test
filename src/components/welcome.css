@@ -127,3 +127,31 @@
         padding-right: 50px;
     }
 }
+@media screen and (max-width: 800px) {
+    .welcome-content{
+        font-size: 15px;
+    }
+    .welcome-images img{
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+    }
+    .welcome-left img{
+        height: 200px;
+        width: 300px;
+        object-fit: cover;
+        margin-left: 50px;
+        margin: 0px;
+    }
+    .welcome-left-button{
+        width: 130px;
+        height: 50px;
+        font-size: 14px;
+    }
+    .left-button{
+        padding-right: 50px;
+    }
+    .welcome{
+        padding: 50px;
+    }
+}

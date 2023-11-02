@@ -5,11 +5,11 @@ import './footer.css'
 export default function Footer() {
     return (
         <div className="footer">
-            <h1>Footer</h1>
-            {/* <div>
+            <h1>footer</h1>
+            <div>
                 <div>
                     <div>
-                        <div>
+                        <div className="f_contact">
                             <div><img src="" alt="" /></div>
                             <div>
                                 <div>+996 (312) 63 14 25</div>
@@ -41,7 +41,7 @@ export default function Footer() {
                     <img src="" alt="" />
                     <img src="" alt="" />
                 </div>
-            </div> */}
+            </div>
         </div>
     )
 }

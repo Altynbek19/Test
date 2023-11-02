@@ -3,6 +3,7 @@ import App from "../App.jsx";
 import Footer from "../components/Footer/Footer"
 import Header from "../components/Header/Header.jsx"
 import Welcome from "../components/Welcome.jsx";
+import Carousel from "../components/carousel.jsx";
 const path = (import.meta.env.PROD)? '/project' : ''
   
 const router = createBrowserRouter([
@@ -16,10 +17,10 @@ const router = createBrowserRouter([
     )
   },
   {
-    path: `/footer`,
+    path: `/carousel`,
     element: (
       <div>
-        <Footer />
+        <Carousel />
       </div>
     )
   }
