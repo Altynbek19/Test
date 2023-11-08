@@ -1,8 +1,12 @@
 /* Стили для контейнера карусели */
+.carousel_container{
+  padding-bottom: 450px;
+}
 .carousel{
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* padding-bottom: 450px; */
 }
 
 .carousel-title{
@@ -45,4 +49,31 @@
 
 .carousel .control-dots .dot{
   background: #9C87EF;
+}
+
+@media screen and (max-width: 800px) {
+  .carousel_container{
+    padding-bottom: 350px;
+  }
+  .carousel-root{
+    width: 350px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .carousel_container{
+    padding-bottom: 200px;
+  }
+  .carousel-root{
+    width: 260px;
+  }
+  .carousel .carousel-dots{
+    height: 15px;
+  }
+  .dot{
+    width: 5px;
+    height: 5px;
+  }
+  .carousel-title{
+    font-size: 22px;
+  }
 }

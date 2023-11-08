@@ -3,23 +3,30 @@ import { Link } from 'react-router-dom'
 
 import './Header.css'
 import logo from '../../assets/logo.png'
+import burger from '../../assets/burger-menu.png'
 
 export default function Header() {
     return (
         <header className="header">
             <div className="header-container">
-                <img className="header-logo" src={logo} alt="" />
+                <Link to='/'>
+                    
+                    <img className="header-logo" src={logo} alt="" />
+    
+                </Link>
                 <div className="header-buttons">
                     <div className="header-button">
-                        колледж
+                        КОЛЛЕДЖ
                     </div>
-                    <Link to="/"><div className="header-button">
+                    <Link to="/computer"><div className="header-button">
                     ПРОФЕССИИ
                     </div></Link>
                     
-                    <div className="header-button">
-                    СТУДЕНЧЕСКИЕ КЛУБЫ
-                    </div>
+                    <Link to='/povtas'>
+                        <div className="header-button">
+                        СТУДЕНЧЕСКИЕ КЛУБЫ
+                        </div>
+                    </Link>
                     <div className="header-button">
                     СТУДЕНТ
                     </div>
@@ -30,6 +37,9 @@ export default function Header() {
                     КОНТАКТЫ
                     </div>
                 </div>
+                    <div className="burger">
+                        <img src={burger} alt="" />
+                    </div>
             </div>
         </header>
     )

@@ -10,6 +10,8 @@
     width: 90%;
     margin: 0 auto;
     gap: 50px;
+    margin-bottom: 255px;
+    font-size: 15px;
 }
 .spec-part1{
     display: flex;
@@ -36,15 +38,10 @@
     color: #fff;
 }
 
-@media screen and (max-width: 1200px) {
-    .specialist{
-        padding: 0 5%;
-    }
-}
-
 @media screen and (max-width: 1050px) {
     .specialist{
         font-size: 12px;
+        height: 210px;
     }
 
 }
@@ -52,12 +49,40 @@
     .specialist{
         font-size: 8px;
         height: 150px;
+        padding: 10px;
+    }
+    .specialists{
+        margin-bottom: 150px;
     }
 
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
     .specialist{
-        padding: 10px;
+        font-size: 7px;
+        height: 120px;
+    }
+    .specialists>h1{
+        font-size: 20px;
+    }
+    .specialist-header img{
+        width: 40px;
+        height: 40px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .specialist{
+        font-size: 6px;
+        height: 105px;
+        border-radius: 7px;
+    }
+    .specialist-header img{
+        width: 30px;
+        height: 30px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .specialist{
+        padding: 8px;
     }
 }
